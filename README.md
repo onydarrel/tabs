@@ -1,1 +1,3 @@
-# Membuat Tab dalam HTML, CSS dan Javascript
+# Tabs
+
+Membuat Tab dengan HTML, CSS dan Javascript

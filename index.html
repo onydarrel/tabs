@@ -21,11 +21,10 @@
             box-sizing: border-box;
             font-family: 'Montserrat', sans-serif;
         }
-        
-        .wrapper {
+        /* .wrapper {
             width: 100%;
             margin: 80px auto;
-        }
+        } */
         
         .tabs ul {
             display: flex;
@@ -76,6 +75,7 @@
         .tabs ul li.active {
             background: #e8f5f1;
             color: #028f68;
+            width: -webkit-fill-available;
         }
         
         .tabs ul li:hover:before,
@@ -98,8 +98,8 @@
         
         .tab_wrap .tab_content p {
             font-size: 14px;
-            line-height: 22px;
-            margin-bottom: 10px;
+            /* line-height: 22px; */
+            /* margin-bottom: 10px; */
         }
         
         p {
@@ -109,6 +109,7 @@
         ol,
         ul {
             padding-left: 0;
+            padding-right: 0;
         }
         
         @media (min-width: 360px) and (max-width: 575.98px) {
@@ -132,88 +133,88 @@
 
 <body>
     <div class="container">
-        <div class="wrapper">
-            <div class="tabs">
-                <ul>
-                    <li class="active">
-                        <span class="icon">
+        <!-- <div class="wrapper"> -->
+        <div class="tabs">
+            <ul>
+                <li class="active">
+                    <span class="icon">
 						<i class="far fa-envelope"></i>
 					</span>
-                        <span class="text">Surat</span>
-                    </li>
-                    <li>
-                        <span class="icon">
+                    <span class="text">Surat</span>
+                </li>
+                <li>
+                    <span class="icon">
 						<i class="fas fa-sms"></i>
 					</span>
-                        <span class="text">SMS</span>
-                    </li>
-                    <li>
-                        <span class="icon">
+                    <span class="text">SMS</span>
+                </li>
+                <li>
+                    <span class="icon">
 						<i class="fas fa-phone-alt"></i>
 					</span>
-                        <span class="text">Telepon</span>
-                    </li>
-                    <li>
-                        <span class="icon">
+                    <span class="text">Telepon</span>
+                </li>
+                <li>
+                    <span class="icon">
 						<i class="fas fa-mobile-alt"></i>
 					</span>
-                        <span class="text">Andoid</span>
-                    </li>
-                </ul>
-            </div>
+                    <span class="text">Andoid</span>
+                </li>
+            </ul>
+        </div>
 
-            <div class="content">
-                <div class="tab_wrap" style="display: block;">
-                    <div class="title">Surat</div>
-                    <div class="tab_content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga
-                            eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi
-                            quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas
-                            temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga
-                            eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi
-                            quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas
-                            temporibus, ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
-                    </div>
+        <div class="content">
+            <div class="tab_wrap" style="display: block;">
+                <div class="title">Surat</div>
+                <div class="tab_content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga
+                        eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi
+                        quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus,
+                        ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem inventore perspiciatis alias, magni provident nulla recusandae odio consequatur praesentium officia non voluptate voluptatum debitis consequuntur omnis incidunt fuga
+                        eaque sit aliquam nemo. Recusandae voluptatibus excepturi, voluptates inventore nulla aliquid porro a asperiores beatae quas quo incidunt at, cumque minima officiis error eius dignissimos animi ullam unde odit! Nobis aut animi
+                        quibusdam molestias libero, facere vel cum atque incidunt esse! Libero ipsam praesentium sit, enim corrupti quia nobis obcaecati nostrum voluptatem totam nulla delectus ipsa facilis optio quis iure unde repudiandae voluptas temporibus,
+                        ad veritatis dolorem, culpa maiores. Dicta, quod neque.</p>
                 </div>
-                <div class="tab_wrap" style="display: none;">
-                    <div class="title">SMS</div>
-                    <div class="tab_content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit culpa veritatis corrupti nihil dignissimos labore quis nesciunt quidem consequatur minima rerum, saepe enim ipsa maiores placeat eaque sed facilis exercitationem
-                            architecto aliquam totam harum dolores sequi repellendus. Expedita illo voluptatum, explicabo qui pariatur ipsum laborum praesentium modi voluptatem libero. Vero quis eligendi et? Quis molestias beatae voluptates eligendi,
-                            nihil quas esse dolores distinctio fugiat, magnam nisi provident ea similique unde qui, fuga totam! Suscipit nam possimus illum alias, nostrum soluta dicta dolore veniam eum quasi necessitatibus ratione dolores quas voluptatibus
-                            iure temporibus distinctio dolorum, ducimus ullam! Quae provident rem ad vitae similique.</p>
-                        <p>Deserunt impedit sunt recusandae laboriosam dolor porro fugit nulla similique nesciunt, dolorum, consequuntur veniam quae culpa a nihil tempora eius nisi maxime libero, perspiciatis odit mollitia molestias. Autem dicta tempore
-                            natus vero asperiores maxime impedit saepe aliquam cum repudiandae voluptatum beatae nostrum, cupiditate, nobis quia id tempora corporis quisquam? Fugiat fugit dolores possimus officiis aliquid saepe exercitationem, soluta
-                            consequatur eius. Nemo illo numquam vero, ratione laboriosam delectus, totam accusantium esse omnis, voluptatem id. Optio itaque eligendi molestiae repudiandae. Commodi eum odit nostrum soluta vitae dolorem voluptate fuga quos!
-                            Fuga inventore praesentium et repellat obcaecati accusantium corporis ipsum in.</p>
-                    </div>
+            </div>
+            <div class="tab_wrap" style="display: none;">
+                <div class="title">SMS</div>
+                <div class="tab_content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit culpa veritatis corrupti nihil dignissimos labore quis nesciunt quidem consequatur minima rerum, saepe enim ipsa maiores placeat eaque sed facilis exercitationem architecto
+                        aliquam totam harum dolores sequi repellendus. Expedita illo voluptatum, explicabo qui pariatur ipsum laborum praesentium modi voluptatem libero. Vero quis eligendi et? Quis molestias beatae voluptates eligendi, nihil quas esse
+                        dolores distinctio fugiat, magnam nisi provident ea similique unde qui, fuga totam! Suscipit nam possimus illum alias, nostrum soluta dicta dolore veniam eum quasi necessitatibus ratione dolores quas voluptatibus iure temporibus
+                        distinctio dolorum, ducimus ullam! Quae provident rem ad vitae similique.</p>
+                    <p>Deserunt impedit sunt recusandae laboriosam dolor porro fugit nulla similique nesciunt, dolorum, consequuntur veniam quae culpa a nihil tempora eius nisi maxime libero, perspiciatis odit mollitia molestias. Autem dicta tempore natus
+                        vero asperiores maxime impedit saepe aliquam cum repudiandae voluptatum beatae nostrum, cupiditate, nobis quia id tempora corporis quisquam? Fugiat fugit dolores possimus officiis aliquid saepe exercitationem, soluta consequatur
+                        eius. Nemo illo numquam vero, ratione laboriosam delectus, totam accusantium esse omnis, voluptatem id. Optio itaque eligendi molestiae repudiandae. Commodi eum odit nostrum soluta vitae dolorem voluptate fuga quos! Fuga inventore
+                        praesentium et repellat obcaecati accusantium corporis ipsum in.</p>
                 </div>
-                <div class="tab_wrap" style="display: none;">
-                    <div class="title">Telepon</div>
-                    <div class="tab_content">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia fugit illo dolorem tenetur vel, beatae facere quaerat nihil commodi corrupti. Sed id tempora sit dignissimos consequuntur a vitae, in quidem labore saepe error. Ducimus
-                            autem modi illo pariatur dolore sed. Cupiditate, reprehenderit ullam? Error dicta facilis officia pariatur maxime sequi odio dignissimos numquam dolore. Nobis earum, quas neque aperiam eos incidunt optio molestiae illo? Possimus,
-                            vero enim. Veniam ullam suscipit alias repellendus laborum incidunt aliquam nihil obcaecati distinctio omnis harum, cumque cum dolores quas quae unde ut qui eos rerum. Dignissimos facere id tempore ab accusantium dolores ipsam
-                            aperiam, sapiente odit at atque cumque iure minima exercitationem, quibusdam, voluptatum et illo? Ducimus saepe cupiditate voluptate quod atque necessitatibus? Beatae laudantium praesentium blanditiis sapiente iusto accusamus
-                            dolores culpa iure? Ducimus ipsum esse, earum nisi inventore illum? Perspiciatis beatae qui adipisci consequuntur laborum inventore quia distinctio est, autem quam excepturi voluptate iste! Illo deserunt libero saepe facere
-                            animi, asperiores corporis soluta eveniet distinctio, veritatis aut? Placeat ipsum a aliquid numquam earum eligendi mollitia, aut nam perferendis velit enim maiores harum! Magnam ex suscipit sit quo, quasi soluta reprehenderit
-                            architecto impedit ipsa, dignissimos quis error incidunt voluptatem deleniti omnis numquam aperiam. Quos, eligendi!</p>
-                    </div>
+            </div>
+            <div class="tab_wrap" style="display: none;">
+                <div class="title">Telepon</div>
+                <div class="tab_content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia fugit illo dolorem tenetur vel, beatae facere quaerat nihil commodi corrupti. Sed id tempora sit dignissimos consequuntur a vitae, in quidem labore saepe error. Ducimus
+                        autem modi illo pariatur dolore sed. Cupiditate, reprehenderit ullam? Error dicta facilis officia pariatur maxime sequi odio dignissimos numquam dolore. Nobis earum, quas neque aperiam eos incidunt optio molestiae illo? Possimus,
+                        vero enim. Veniam ullam suscipit alias repellendus laborum incidunt aliquam nihil obcaecati distinctio omnis harum, cumque cum dolores quas quae unde ut qui eos rerum. Dignissimos facere id tempore ab accusantium dolores ipsam
+                        aperiam, sapiente odit at atque cumque iure minima exercitationem, quibusdam, voluptatum et illo? Ducimus saepe cupiditate voluptate quod atque necessitatibus? Beatae laudantium praesentium blanditiis sapiente iusto accusamus dolores
+                        culpa iure? Ducimus ipsum esse, earum nisi inventore illum? Perspiciatis beatae qui adipisci consequuntur laborum inventore quia distinctio est, autem quam excepturi voluptate iste! Illo deserunt libero saepe facere animi, asperiores
+                        corporis soluta eveniet distinctio, veritatis aut? Placeat ipsum a aliquid numquam earum eligendi mollitia, aut nam perferendis velit enim maiores harum! Magnam ex suscipit sit quo, quasi soluta reprehenderit architecto impedit
+                        ipsa, dignissimos quis error incidunt voluptatem deleniti omnis numquam aperiam. Quos, eligendi!</p>
                 </div>
-                <div class="tab_wrap" style="display: none;">
-                    <div class="title">Smartphone</div>
-                    <div class="tab_content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptate? Dolor quam quos adipisci laborum sint numquam facilis cum error dolore excepturi similique, at inventore architecto accusamus blanditiis fugit sit
-                            autem amet eius! Quo accusantium laboriosam, architecto quidem fuga illo sunt fugiat maiores. Molestias odio, veritatis at voluptatem fuga possimus et quas alias, eligendi exercitationem corrupti esse earum adipisci debitis.
-                            Magnam, consectetur ducimus illum in perferendis, non sapiente unde vero porro, accusamus illo natus quas quo omnis dolorum blanditiis magni facilis earum molestias aperiam neque ab explicabo. Animi debitis quo quia? Doloremque
-                            recusandae atque laudantium, impedit facere mollitia voluptatum deserunt quisquam repellendus? Cumque, odit inventore facere commodi, temporibus ad repellendus ratione recusandae nesciunt saepe doloremque officiis dolores cupiditate
-                            eius tenetur necessitatibus! Porro facere at ea eaque totam. Expedita molestias assumenda hic, deleniti eligendi culpa nesciunt! At consequatur in quas cumque numquam necessitatibus nostrum dolorem dolorum saepe accusamus tempore
-                            doloribus nulla deserunt dolores, expedita temporibus natus incidunt tempora corrupti.</p>
-                    </div>
+            </div>
+            <div class="tab_wrap" style="display: none;">
+                <div class="title">Smartphone</div>
+                <div class="tab_content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, voluptate? Dolor quam quos adipisci laborum sint numquam facilis cum error dolore excepturi similique, at inventore architecto accusamus blanditiis fugit sit autem
+                        amet eius! Quo accusantium laboriosam, architecto quidem fuga illo sunt fugiat maiores. Molestias odio, veritatis at voluptatem fuga possimus et quas alias, eligendi exercitationem corrupti esse earum adipisci debitis. Magnam,
+                        consectetur ducimus illum in perferendis, non sapiente unde vero porro, accusamus illo natus quas quo omnis dolorum blanditiis magni facilis earum molestias aperiam neque ab explicabo. Animi debitis quo quia? Doloremque recusandae
+                        atque laudantium, impedit facere mollitia voluptatum deserunt quisquam repellendus? Cumque, odit inventore facere commodi, temporibus ad repellendus ratione recusandae nesciunt saepe doloremque officiis dolores cupiditate eius
+                        tenetur necessitatibus! Porro facere at ea eaque totam. Expedita molestias assumenda hic, deleniti eligendi culpa nesciunt! At consequatur in quas cumque numquam necessitatibus nostrum dolorem dolorum saepe accusamus tempore doloribus
+                        nulla deserunt dolores, expedita temporibus natus incidunt tempora corrupti.</p>
                 </div>
             </div>
         </div>
+        <!-- </div> -->
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

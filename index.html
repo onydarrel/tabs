@@ -32,7 +32,7 @@
             background: #fbfbfb;
             border: 1px solid #dddddd;
             border-radius: 5px;
-            margin-bottom: 25px;
+            /* margin-bottom: 25px; */
         }
         
         .tabs ul li {
@@ -44,7 +44,7 @@
             text-transform: uppercase;
             font-size: 14px;
             font-weight: 600;
-            letter-spacing: 3px;
+            /* letter-spacing: 3px; */
             cursor: pointer;
             transition: all 0.2s ease;
             position: relative;
@@ -105,6 +105,28 @@
         p {
             text-align: justify;
         }
+        
+        ol,
+        ul {
+            padding-left: 0;
+        }
+        
+        @media (min-width: 360px) and (max-width: 575.98px) {
+            .tabs ul li {
+                width: 100px;
+                padding: 15px;
+                border-right: 1px solid #dddddd;
+                text-align: center;
+                color: #3b3b3b;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 600;
+                /* letter-spacing: 3px; */
+                cursor: pointer;
+                transition: all 0.2s ease;
+                position: relative;
+            }
+        }
     </style>
 </head>
 
@@ -135,7 +157,7 @@
                         <span class="icon">
 						<i class="fas fa-mobile-alt"></i>
 					</span>
-                        <span class="text">Smartphone</span>
+                        <span class="text">Andoid</span>
                     </li>
                 </ul>
             </div>
